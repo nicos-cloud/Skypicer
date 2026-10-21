@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasi Padang: Mahakarya Kuliner Minangkabau</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #FFFDF9;
+            color: #2D2D2D;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- ================= 1. HALAMAN AWAL (LANDING PAGE) ================= -->
+    <section id="landing-page" class="relative w-full h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+        <!-- Background Hero (Gambar 1) -->
+        <div class="absolute inset-0 z-0">
+            <img src="1.jpeg" alt="Background Nasi Padang" class="w-full h-full object-cover filter brightness-50">
+        </div>
+        
+        <!-- Konten Halaman Awal -->
+        <div class="relative z-10 max-w-3xl mx-auto text-white space-y-6">
+            <!-- Judul Kontras Terang -->
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-md text-amber-300">
+                Nasi Padang: Mahakarya Kuliner Minangkabau yang Mendunia
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-amber-100 drop-shadow">
+                Bumbu Melimpah, Cita Rasa Tiada Tara
+            </p>
+            <div class="pt-4">
+                <button onclick="goToMainPage()" class="bg-amber-400 hover:bg-amber-500 text-stone-900 font-bold px-8 py-4 rounded-full text-lg shadow-xl transition duration-300 transform hover:scale-105 cursor-pointer">
+                    Jelajahi Selengkapnya
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 2. HALAMAN UTAMA ================= -->
+    <main id="main-page" class="hidden min-h-screen bg-[#FFFDF9] text-stone-800 pb-20">
+        
+        <!-- Header / Banner Utama -->
+        <header class="bg-stone-900 py-16 px-4 text-center border-b border-amber-500">
+            <div class="max-w-4xl mx-auto space-y-3">
+                <span class="bg-amber-500 text-stone-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Warisan Kuliner Minangkabau</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-amber-300 leading-tight">
+                    Nasi Padang: Mahakarya Kuliner Minangkabau yang Mendunia
+                </h1>
+                <p class="text-lg md:text-xl font-semibold text-amber-100">
+                    Bumbu Melimpah, Cita Rasa Tiada Tara
+                </p>
+            </div>
+        </header>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 py-12">
+
+            <!-- A. LATAR BELAKANG -->
+            <section class="space-y-8">
+                <div class="border-l-4 border-amber-600 pl-4">
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900">A. Latar Belakang</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Point 1: Asal Usul (Gambar 2) -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 flex flex-col space-y-4">
+                        <div class="overflow-hidden rounded-xl h-52">
+                            <img src="2.jpeg" alt="Asal Usul" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900">Asal Usul</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Berasal dari Minangkabau, Sumatera Barat. Nasi Padang bukan sekadar makanan, melainkan tradisi dan identitas budaya.
+                        </p>
+                    </div>
+
+                    <!-- Point 2: Ciri Khas (Gambar 3) -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 flex flex-col space-y-4">
+                        <div class="overflow-hidden rounded-xl h-52">
+                            <img src="3.jpeg" alt="Ciri Khas" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900">Ciri Khas</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Penggunaan rempah-rempah yang kaya (rich in spices), santan pekat, serta proses memasak tradisional yang membutuhkan ketelitian dan kesabaran.
+                        </p>
+                    </div>
+
+                    <!-- Point 3: Pengakuan Dunia (Gambar 4) -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-amber-100 flex flex-col space-y-4">
+                        <div class="overflow-hidden rounded-xl h-52">
+                            <img src="4.jpeg" alt="Pengakuan Dunia" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900">Pengakuan Dunia</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Rendang yang menjadi salah satu menu utamanya pernah dinobatkan sebagai salah satu makanan terlezat di dunia versi CNN.
+                        </p>
+                        <blockquote class="bg-amber-50 border-l-4 border-amber-400 p-3 text-xs italic text-stone-800 rounded-r-md mt-auto">
+                            "Rendang pernah menjadi salah satu makanan terlezat di dunia. Berdasarkan polling CNN Travel, rendang berhasil mencuri hati orang-orang dan menempati posisi pertama sebagai makanan terenak dunia."
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- B. MENU NASI PADANG (2 BARIS x 5 KOLOM) -->
+            <section class="space-y-8">
+                <div class="border-l-4 border-amber-600 pl-4">
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900">B. Menu Nasi Padang</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+                    
+                    <!-- BARIS 1: LAUK UTAMA (Gambar 5 - 9) -->
+                    <!-- Menu 1 (Gambar 5) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="5.jpeg" alt="Rendang Daging" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Rendang Daging</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Olahan daging sapi yang dimasak berjam-jam dengan santan dan belasan rempah pilihan hingga menghitam, gurih, legit, dan meresap sempurna.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu 2 (Gambar 6) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="6.jpeg" alt="Ayam Pop" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Ayam Pop</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Ayam kampung khas dengan warna pucat khas hasil proses blanching dan goreng kilat, disajikan empuk, gurih manis, dan dipadu sambal tomat petai.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu 3 (Gambar 7) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="7.jpeg" alt="Dendeng Balado" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Dendeng Balado</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Irisan daging sapi tipis yang digoreng garing (crispy) atau basah, disiram sambal balado merah dengan sensasi pedas dan gurih yang menggigit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu 4 (Gambar 8) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="8.jpeg" alt="Gulai Cincang" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Gulai Cincang</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Potongan daging dan tetelan sapi berminyak yang dimasak dalam kuah gulai kental, kaya akan rempah-rempah hangat seperti kapulaga dan pekak.</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu 5 (Gambar 9) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="9.jpeg" alt="Ayam Bakar Khas Padang" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Ayam Bakar Padang</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Ayam yang diungkep bumbu kuning rempah kental lalu dibakar ringan, menghasilkan aroma smoky dengan sensasi gurih rempah di setiap gigitan.</p>
+                        </div>
+                    </div>
+
+                    <!-- BARIS 2: PELENGKAP (Gambar 10 - 14) -->
+                    <!-- Pelengkap 1 (Gambar 10) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="10.jpeg" alt="Daun Singkong Rebus" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Daun Singkong</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Daun singkong rebus empuk penyeimbang rasa dan memberikan sensasi segar di setiap porsi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pelengkap 2 (Gambar 11) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="11.jpeg" alt="Gulai Nangka" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Gulai Nangka</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Sayur nangka muda bersantan gurih kaya akan bumbu kuning Minang.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pelengkap 3 (Gambar 12) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="12.jpeg" alt="Sambal Ijo" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Sambal Ijo</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Sambal cabai hijau khas yang gurih, segar, dan tidak terlalu pedas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pelengkap 4 (Gambar 13) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="13.jpeg" alt="Bumbu Rendang / Serundeng" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Bumbu Rendang</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Ekstra kuah/bumbu rendang pekat peremas rasa hidangan agar makin mantap.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pelengkap 5 (Gambar 14) -->
+                    <div class="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden flex flex-col">
+                        <div class="h-44 overflow-hidden">
+                            <img src="14.jpeg" alt="Kerupuk Jangkiik / Kulit" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-lg font-bold text-stone-900 mb-2">Kerupuk Kulit</h3>
+                            <p class="text-stone-600 text-xs leading-relaxed">Pelengkap renyah krecek/kerupuk kulit yang makin nikmat disiram kuah gulai.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- C. PENUTUP -->
+            <section class="bg-amber-50/80 rounded-3xl p-8 md:p-12 border border-amber-200 text-center space-y-6 shadow-sm">
+                <div class="border-l-4 border-amber-600 pl-4 text-left">
+                    <h2 class="text-2xl md:text-3xl font-bold text-stone-900">C. Penutup</h2>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <!-- Penutup (Gambar 15) -->
+                    <div class="rounded-2xl overflow-hidden shadow-md max-w-lg mx-auto h-64 md:h-80">
+                        <img src="15.jpeg" alt="Penutup Nasi Padang" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Rangkuman -->
+                    <p class="text-stone-800 text-base md:text-lg leading-relaxed">
+                        <strong>Rangkuman:</strong> Nasi Padang bukan sekadar santapan harian, melainkan warisan budaya kuliner Indonesia yang menawarkan pengalaman rasa luar biasa.
+                    </p>
+
+                    <!-- Call to Action / Closing Statement -->
+                    <div class="p-6 bg-white rounded-2xl border border-amber-300 shadow-sm">
+                        <h3 class="text-lg md:text-2xl font-extrabold text-amber-800 leading-snug">
+                            "Sudahkah Anda makan Nasi Padang hari ini? Mari lestarikan dan nikmati kelezatan warisan nusantara!"
+                        </h3>
+                    </div>
+
+                    <div class="pt-4">
+                        <button onclick="goToLandingPage()" class="bg-stone-800 hover:bg-stone-900 text-amber-300 font-semibold px-6 py-2.5 rounded-full text-sm transition duration-300 cursor-pointer">
+                            &uarr; Kembali ke Beranda
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- JavaScript Interaksi Navigasi -->
+    <script>
+        function goToMainPage() {
+            document.getElementById('landing-page').classList.add('hidden');
+            document.getElementById('main-page').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goToLandingPage() {
+            document.getElementById('main-page').classList.add('hidden');
+            document.getElementById('landing-page').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
